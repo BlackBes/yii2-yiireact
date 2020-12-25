@@ -1,6 +1,6 @@
 {
     "name": "blackbes/yii2-yiireact",
-    "description": "Yii2 extension for support a react-based frontend. Add a gii generator of react CRUD. Add native validation and auth support for react front.  Work in pair with https://www.npmjs.com/package/react-yii2-essentials. Check compatibility table.",
+    "description": "Yii2 extension for support a react-based frontend. Work in pair with https://www.npmjs.com/package/react-yii2-essentials. Check compatibility table.",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","react","react-gii","gii","yii2-react","react-yii2","yii-react","react-yii"],
     "license": "MIT",
