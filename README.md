@@ -53,3 +53,8 @@ and all pages with forms for React in `/views/api/<Model name>/`.
 5) Copy the `/views/api/<Model name>/` from Yii2 and paste it into `src/containers` directory of your React
 project
 6) Use `_routes.js` to add routes and import generated files
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
