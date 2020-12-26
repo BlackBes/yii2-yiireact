@@ -119,11 +119,11 @@ render() {
 
     return (
         <div>
-            {PrepareIndexModal(this.modalCallbacks(), this.state.modal, t, this.state.modalAction)}
+            {PrepareIndexModal(this.modalCallbacks(), this.state.modal, this.state.modalAction)}
             <div className={'index-page-header'}>
-                <h1>{t("statuses.title")}</h1>
+                <h1><?= Inflector::camel2words(StringHelper::basename($generator->modelClass)) ?></h1>
                 <div className={'model-actions'}>
-                    <Link className="btn btn-success" to={'/statuses/create'}>{t("model.create")}</Link>
+                    <Link className="btn btn-success" to={'/<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>/create'}>Create</Link>
                 </div>
             </div>
 
@@ -131,8 +131,8 @@ render() {
                 (this.state.isDataLoaded) ?
                 <DataView
                     models={this.state.data.data}
-                    modelName={"statuses"}
-                    className={"grid-container-statuses"}
+                    modelName={"<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>"}
+                    className={""}
                     attributes={{
                         <?php
                             $count = 0;
